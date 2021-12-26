@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--С этой строкой страниуа постоянно обновляется, а без неё не работают часы. На body стоит onload, но он почему-то не работает-->
+    <!--<meta http-equiv="Refresh" content="1">-->
+    <style>
+        body {
+            background-image: url(img/time.jpg);
+            background-size: 100% ;
+            background-repeat: no-repeat;
+        }
+        div {
+            margin-top: 150px;
+            text-align: center;
+            padding: 50px 10px;
+        }
+        span {
+            color: rgb(153, 0, 0);
+            font-size: 100px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h3 {
+            color: rgb(0, 65, 19);
+            font-size: 30px;            
+            font-family: 'Courier New', Courier, monospace;
+            padding-top: -30px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body onLoad="start()">
+    <script src="script.js"></script>
+    <div id="ClockPage">
+        <span id="clock"></span>
+        <h3 id="timer"></h3>
+    </div>
+</body>
+</html>
